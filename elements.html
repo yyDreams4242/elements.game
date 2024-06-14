@@ -1,1 +1,45 @@
-
+elements.html
+<DOCTYPE! html>
+<html>
+      <head>
+            <title>元素ゲーム</title>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="elements.css">
+            <script src="elements.js"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
+      </head>
+      <body>
+            <header>
+                  <h1 id="head">元素ゲーム</h1>
+            </header>
+            <main>
+                  <div id="main">
+                        <div id="mainQuestion">
+                              <h1 id="question"></h1><span id="num"></span>
+                        </div>
+                        <p id="hint"></p>
+                        <p id="questionElement"></p>
+                        <input id="answer" type="text" placeholder="回答を入力" size="20">
+                        <button id="go" onclick="hantei()">回答</button>
+                        <h2 id="TrueOrFalse"></h2>
+                        <p id="TrueAnswer"></p>
+                        <button id="IDontKnow" onclick="dontknow()">わからない</button>
+                        <button id="next">次の問題 ></button>
+                  </div>
+                  <div id="kiroku">
+                        <p id="renzokuseikai">連続正解回数 : </p>
+                        <p id="saikourenzokuseikai">最高連続正解回数 : </p>
+                  </div>
+                  <div id="nav">
+                        <p>＜<span id="sousa">操作方法</span>＞<br>
+                              ctrl：カーソルを合わせる<br>
+                              alt：わからない<br>
+                              Enter：回答<br>
+                              右矢印：次の問題
+                        </p>
+                  </div>
+            </main>
+      </body>
+</html>
